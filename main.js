@@ -1,5 +1,8 @@
 async function start() {
+  const BUFFER_SIZE = 134217728;
+
   var navigator = window.navigator;
+
 
   if (!navigator.gpu) throw Error("WebGPU not supported.");
 
@@ -78,8 +81,6 @@ async function start() {
     });
 
 
-  // create buffers
-  const BUFFER_SIZE = 134217728;
 
   const input = device.createBuffer({
     size: BUFFER_SIZE,
