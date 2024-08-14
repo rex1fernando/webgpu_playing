@@ -1,5 +1,5 @@
 async function start() {
-  const BUFFER_SIZE = 134217728;
+  const BUFFER_SIZE = 134217729;
 
   var navigator = window.navigator;
 
